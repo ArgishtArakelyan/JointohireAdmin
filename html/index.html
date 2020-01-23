@@ -1,0 +1,654 @@
+<html>
+
+<head>
+    <title>JoinToHire Admin</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" /> -->
+    <link rel="stylesheet" href="../css/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/css/main.css">
+    <link rel="stylesheet" href="../css/css/responsive.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <nav class="navbar navbar-expand-lg navbar-light newNav">
+            <div class="d-flex">
+                <a href="" class="logo"><img src="../img/logo.png" alt=""></a>
+                <div class="hide_menu"><img src="../img/ic_menu_hide.png" alt=""></div>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><img src="../img/ic_playlist_add.png" alt=""></li>
+                    <li><img src="../img/icon6.png" alt=""><span></span></li>
+                    <li><img src="../img/icon7.png" alt=""> <span></span></li>
+                    <li class="logoutDropDown"><img src="../img/icon8.png" alt=""></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="d-flex">
+            <div class="navbar-default sidebar">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav newSidebar in" id="side-menu">
+                        <li>
+                            <a href="">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 10H8V0H0V10ZM0 18H8V12H0V18ZM10 18H18V8H10V18ZM10 0V6H18V0H10Z" fill="#A7A8AA"></path>
+                                </svg>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18 0H2V2H18V0ZM2 24H18V22H2V24ZM18 4H2C0.9 4 0 4.9 0 6V18C0 19.1 0.9 20 2 20H18C19.1 20 20 19.1 20 18V6C20 4.9 19.1 4 18 4ZM10 6.75C11.24 6.75 12.25 7.76 12.25 9C12.25 10.24 11.24 11.25 10 11.25C8.76 11.25 7.75 10.24 7.75 9C7.75 7.76 8.76 6.75 10 6.75ZM15 17H5V15.5C5 13.83 8.33 13 10 13C11.67 13 15 13.83 15 15.5V17Z" fill="#A7A8AA"></path>
+                                </svg>
+                                <span>Roles</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M23.633 17.738L22 12.84V1.00301C22 0.73779 21.8946 0.483436 21.7071 0.295899C21.5196 0.108363 21.2652 0.00300598 21 0.00300598H3C2.73478 0.00300598 2.48043 0.108363 2.29289 0.295899C2.10536 0.483436 2 0.73779 2 1.00301V12.84L0.367001 17.737C0.181001 18.295 0.258001 18.867 0.575001 19.309C0.893001 19.75 1.412 20.003 2 20.003H22C22.588 20.003 23.107 19.75 23.425 19.309C23.742 18.867 23.818 18.295 23.633 17.738ZM12 7.00301C11.7373 7.00294 11.4772 6.95113 11.2345 6.85054C10.9918 6.74994 10.7713 6.60253 10.5856 6.41672C10.3999 6.23091 10.2526 6.01034 10.1521 5.7676C10.0516 5.52487 9.99994 5.26472 10 5.00201C10.0001 4.7393 10.0519 4.47917 10.1525 4.23649C10.2531 3.9938 10.4005 3.7733 10.5863 3.58759C10.7721 3.40187 10.9927 3.25457 11.2354 3.15409C11.4781 3.05362 11.7383 3.00194 12.001 3.00201C12.5316 3.00214 13.0403 3.21303 13.4154 3.58829C13.7905 3.96355 14.0011 4.47244 14.001 5.00301C14.0009 5.53357 13.79 6.04235 13.4147 6.41743C13.0395 6.7925 12.5306 7.00314 12 7.00301C13.0609 7.00301 14.0783 7.42443 14.8284 8.17458C15.5786 8.92472 16 9.94214 16 11.003H8C8 9.94214 8.42143 8.92472 9.17157 8.17458C9.92172 7.42443 10.9391 7.00301 12 7.00301ZM2.388 18.003L3.721 14.003H20.28L21.613 18.003H2.388Z" fill="#A7A8AA"></path>
+                                </svg>
+                                <span>Admins</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 6C10.343 6 9 4.657 9 3C9 1.343 10.343 0 12 0C13.657 0 15 1.343 15 3C15 4.657 13.657 6 12 6Z" fill="#A7A8AA"></path>
+                                    <path d="M4 19V11C4 9.87 4.391 8.838 5.026 8H2C0.895 8 0 8.895 0 10V16H2V21C2 21.552 2.448 22 3 22H5C5.552 22 6 21.552 6 21V19H4Z" fill="#A7A8AA"></path>
+                                    <path d="M14 24H10C9.448 24 9 23.552 9 23V17H6V11C6 9.343 7.343 8 9 8H15C16.657 8 18 9.343 18 11V17H15V23C15 23.552 14.552 24 14 24Z" fill="#A7A8AA"></path>
+                                    <path d="M4 7C2.895 7 2 6.105 2 5C2 3.895 2.895 3 4 3C5.105 3 6 3.895 6 5C6 6.105 5.105 7 4 7Z" fill="#A7A8AA"></path>
+                                    <path d="M20 19V11C20 9.87 19.609 8.838 18.974 8H22C23.105 8 24 8.895 24 10V16H22V21C22 21.552 21.552 22 21 22H19C18.448 22 18 21.552 18 21V19H20Z" fill="#A7A8AA"></path>
+                                    <path d="M20 7C21.105 7 22 6.105 22 5C22 3.895 21.105 3 20 3C18.895 3 18 3.895 18 5C18 6.105 18.895 7 20 7Z" fill="#A7A8AA"></path>
+                                </svg>
+                                <span>Team members</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="active">
+                                <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 0H2C0.9 0 0.00999999 0.9 0.00999999 2L0 14C0 15.1 0.9 16 2 16H18C19.1 16 20 15.1 20 14V4C20 2.9 19.1 2 18 2H10L8 0Z" fill="#A7A8AA"></path>
+                                </svg>
+                                <span>All Projects</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18 2H10L8 0H2C0.9 0 0 0.9 0 2V14C0 15.1 0.9 16 2 16H18C19.1 16 20 15.1 20 14V4C20 2.9 19.1 2 18 2ZM15.94 13L13 11.28L10.06 13L10.84 9.67L8.25 7.43L11.66 7.14L13 4L14.34 7.14L17.75 7.43L15.16 9.67L15.94 13Z" fill="#A7A8AA"></path>
+                                </svg>
+                                <span>My Projects</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 14H8V12H1V18C1 19.103 1.898 20 3 20H17C18.104 20 19 19.103 19 18V12H12V14Z" fill="#A7A8AA"></path>
+                                    <path d="M19 4H14V1C14 0.734784 13.8946 0.48043 13.7071 0.292893C13.5196 0.105357 13.2652 0 13 0H7C6.73478 0 6.48043 0.105357 6.29289 0.292893C6.10536 0.48043 6 0.734784 6 1V4H1C0.734784 4 0.48043 4.10536 0.292893 4.29289C0.105357 4.48043 0 4.73478 0 5V10C0 10.2652 0.105357 10.5196 0.292893 10.7071C0.48043 10.8946 0.734784 11 1 11H8V10H12V11H19C19.2652 11 19.5196 10.8946 19.7071 10.7071C19.8946 10.5196 20 10.2652 20 10V5C20 4.73478 19.8946 4.48043 19.7071 4.29289C19.5196 4.10536 19.2652 4 19 4ZM12 4H8V2H12V4Z" fill="#A7A8AA"></path>
+                                </svg>
+                                <span>Jobs</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16 11C17.66 11 18.99 9.66 18.99 8C18.99 6.34 17.66 5 16 5C14.34 5 13 6.34 13 8C13 9.66 14.34 11 16 11ZM8 11C9.66 11 10.99 9.66 10.99 8C10.99 6.34 9.66 5 8 5C6.34 5 5 6.34 5 8C5 9.66 6.34 11 8 11ZM8 13C5.67 13 1 14.17 1 16.5V19H15V16.5C15 14.17 10.33 13 8 13ZM16 13C15.71 13 15.38 13.02 15.03 13.05C16.19 13.89 17 15.02 17 16.5V19H23V16.5C23 14.17 18.33 13 16 13Z" fill="#A7A8AA"></path>
+                                </svg>
+                                <span>Users</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.885 14.786C14.735 14.326 8.998 11.789 8.998 7H2.998C1.894 7 0.997999 7.897 0.997999 9V16C0.997999 17.103 1.894 18 2.998 18H3.998V22L9.332 18H13.998C15.102 18 15.998 17.103 15.998 16V14.832L15.885 14.786Z" fill="#A7A8AA"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.998 7V0H22.998V7C22.998 10.813 19.201 12.58 17.194 12.981L16.998 13.02L16.802 12.981C14.795 12.579 10.998 10.812 10.998 7ZM16 2H18V7H16V2ZM16 8H18V10H16V8Z" fill="#A7A8AA"></path>
+                                </svg>
+                                <span>Disputes</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <svg width="18" height="21" viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.001 3H15.001V6H3.001V3H2.001C1.47057 3 0.961859 3.21071 0.586786 3.58579C0.211713 3.96086 0.000999451 4.46957 0.000999451 5V19C0.000999451 19.5304 0.211713 20.0391 0.586786 20.4142C0.961859 20.7893 1.47057 21 2.001 21H16.001C16.5314 21 17.0401 20.7893 17.4152 20.4142C17.7903 20.0391 18.001 19.5304 18.001 19V5C18.001 4.46957 17.7903 3.96086 17.4152 3.58579C17.0401 3.21071 16.5314 3 16.001 3ZM9.001 9C9.66404 9 10.2999 9.26339 10.7688 9.73223C11.2376 10.2011 11.501 10.837 11.501 11.5C11.501 12.163 11.2376 12.7989 10.7688 13.2678C10.2999 13.7366 9.66404 14 9.001 14C8.33796 14 7.70207 13.7366 7.23323 13.2678C6.76439 12.7989 6.501 12.163 6.501 11.5C6.501 10.837 6.76439 10.2011 7.23323 9.73223C7.70207 9.26339 8.33796 9 9.001 9ZM5.251 19C5.251 16.699 6.7 15.25 9.001 15.25C11.302 15.25 12.751 16.699 12.751 19H5.251Z" fill="#A7A8AA"></path>
+                                    <path d="M11.001 2C11.001 1.46957 10.7903 0.960859 10.4152 0.585786C10.0401 0.210714 9.53143 0 9.001 0C8.47057 0 7.96186 0.210714 7.58679 0.585786C7.21171 0.960859 7.001 1.46957 7.001 2H5.001V5H13.001V2H11.001Z" fill="#A7A8AA"></path>
+                                </svg>
+                                <span>Freelancers</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18 0H2C0.9 0 0 0.9 0 2V20L4 16H18C19.1 16 20 15.1 20 14V2C20 0.9 19.1 0 18 0Z" fill="#A7A8AA"></path>
+                                </svg>
+                                <span>Messages</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16 1C16 0.448 15.552 0 15 0H5C4.448 0 4 0.448 4 1V12H16V1ZM12 9H8V7H12V9ZM12 5H8V3H12V5Z" fill="#A7A8AA"></path>
+                                    <path d="M18 4V13H13V15H7V13H2V4H0V19C0 19.552 0.448 20 1 20H19C19.552 20 20 19.552 20 19V4H18Z" fill="#A7A8AA"></path>
+                                </svg>
+                                <span>Archive Messages</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18 0H2C0.9 0 0.00999999 0.9 0.00999999 2L0 14C0 15.1 0.9 16 2 16H18C19.1 16 20 15.1 20 14V2C20 0.9 19.1 0 18 0ZM18 4L10 9L2 4V2L10 7L18 2V4Z" fill="#A7A8AA"></path>
+                                </svg>
+                                <span>Mail</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20 6H12L10 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V8C22 6.9 21.1 6 20 6ZM15 9C16.1 9 17 9.9 17 11C17 12.1 16.1 13 15 13C13.9 13 13 12.1 13 11C13 9.9 13.9 9 15 9ZM19 17H11V16C11 14.67 13.67 14 15 14C16.33 14 19 14.67 19 16V17Z" fill="#A7A8AA"></path>
+                                </svg>
+                                <span>Freelancer Categories</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20 2H4C2.9 2 2.01 2.9 2.01 4L2 22L6 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2ZM6 14V11.53L12.88 4.65C13.08 4.45 13.39 4.45 13.59 4.65L15.36 6.42C15.56 6.62 15.56 6.93 15.36 7.13L8.47 14H6ZM18 14H10.5L12.5 12H18V14Z" fill="#A7A8AA" />
+                                </svg>
+                                <span>Reviews</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20 6V5H18V6H16V4C16 3.73478 15.8946 3.48043 15.7071 3.29289C15.5196 3.10536 15.2652 3 15 3H9C8.73478 3 8.48043 3.10536 8.29289 3.29289C8.10536 3.48043 8 3.73478 8 4V6H6V5H4V6C2.897 6 2 6.897 2 8V20C2 21.104 2.897 22 4 22H20C20.5304 22 21.0391 21.7893 21.4142 21.4142C21.7893 21.0391 22 20.5304 22 20V8C22 6.897 21.104 6 20 6ZM10 5H14V6H10V5ZM15 12H11.5C11.3674 12 11.2402 12.0527 11.1464 12.1464C11.0527 12.2402 11 12.3674 11 12.5C11 12.6326 11.0527 12.7598 11.1464 12.8536C11.2402 12.9473 11.3674 13 11.5 13H12.5C13.878 13 15 14.122 15 15.5C14.9992 16.0761 14.7998 16.6343 14.4355 17.0805C14.0712 17.5268 13.5643 17.8339 13 17.95V19H11V18H9V16H12.5C12.6326 16 12.7598 15.9473 12.8536 15.8536C12.9473 15.7598 13 15.6326 13 15.5C13 15.3674 12.9473 15.2402 12.8536 15.1464C12.7598 15.0527 12.6326 15 12.5 15H11.5C10.8372 14.9992 10.2018 14.7356 9.73311 14.2669C9.26444 13.7982 9.00079 13.1628 9 12.5C9 11.293 9.859 10.283 11 10.051V9H13V10H15V12Z" fill="#A7A8AA" />
+                                </svg>
+                                <span>Sales</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17 17C18.6569 17 20 15.6569 20 14C20 12.3431 18.6569 11 17 11C15.3431 11 14 12.3431 14 14C14 15.6569 15.3431 17 17 17Z" fill="#A7A8AA"></path>
+                                    <path d="M17 17C14.24 17 12 19.239 12 22H22C22 21.3434 21.8707 20.6932 21.6194 20.0866C21.3681 19.48 20.9998 18.9288 20.5355 18.4645C20.0712 18.0002 19.52 17.6319 18.9134 17.3806C18.3068 17.1293 17.6566 17 17 17Z" fill="#A7A8AA"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14.0551 16.707C13.4 15.9947 13 15.0441 13 14C13 12.1362 14.2748 10.5701 16 10.126V0.999024C15.9995 0.828637 15.9556 0.661182 15.8725 0.512458C15.7893 0.363733 15.6697 0.238642 15.5248 0.148985C15.3799 0.059328 15.2145 0.00806055 15.0443 1.91492e-05C14.8741 -0.00802225 14.7047 0.0274275 14.552 0.103024L11.072 1.84602L8.555 0.168024C8.39063 0.0589737 8.19775 0.000810571 8.0005 0.000810571C7.80325 0.000810571 7.61037 0.0589737 7.446 0.168024L4.928 1.84702L1.448 0.104024C1.29538 0.0284643 1.12602 -0.00698901 0.955909 0.00100561C0.785792 0.00900022 0.620513 0.0601795 0.475647 0.14972C0.330782 0.23926 0.211101 0.364213 0.127885 0.512802C0.0446691 0.66139 0.000658056 0.828721 0 0.999024V18.999C0.000527524 19.2642 0.106022 19.5183 0.293416 19.7059C0.480809 19.8935 0.734854 19.9992 1 20C1.15524 20.0002 1.30835 19.9638 1.447 19.894L4.927 18.154L7.445 19.832C7.60923 19.9415 7.80216 19.9998 7.9995 19.9998C8.19684 19.9998 8.38977 19.9415 8.554 19.832L11.071 18.154L12.0319 18.6348C12.5541 17.8653 13.2505 17.2235 14.0643 16.766C14.0612 16.7464 14.0581 16.7267 14.0551 16.707ZM7.5 7.99902H11V5.99902H9V4.99902H7V6.05002C5.86 6.28302 5 7.29202 5 8.50002C5.00079 9.16282 5.26444 9.79825 5.73311 10.2669C6.20178 10.7356 6.8372 10.9992 7.5 11H8.5C8.63261 11 8.75979 11.0527 8.85355 11.1465C8.94732 11.2402 9 11.3674 9 11.5C9 11.6326 8.94732 11.7598 8.85355 11.8536C8.75979 11.9473 8.63261 12 8.5 12H5V14H7V15H9V13.95C10.14 13.717 11 12.708 11 11.5C11 10.122 9.879 9.00002 8.5 9.00002H7.5C7.37395 8.99026 7.25623 8.93329 7.17036 8.84051C7.08448 8.74772 7.03678 8.62595 7.03678 8.49952C7.03678 8.3731 7.08448 8.25133 7.17036 8.15854C7.25623 8.06576 7.37395 8.00879 7.5 7.99902Z" fill="#A7A8AA"></path>
+                                </svg>
+                                <span>Milestones</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.63 5.84C17.27 5.33 16.67 5 16 5L5 5.01C3.9 5.01 3 5.9 3 7V17C3 18.1 3.9 18.99 5 18.99L16 19C16.67 19 17.27 18.67 17.63 18.16L22 12L17.63 5.84Z" fill="#A7A8AA"></path>
+                                </svg>
+                                <span>Labels</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="hire-dashboard">
+                <h1 class="title">Hire’s</h1>
+                <div class="filters">
+                    <div>
+                        <button class="btn">
+                            <img src="../img/Filter.png" alt="">
+                            Filter
+                        </button>
+                        <button class="btn">
+                            <img src="../img/Peoples.png" alt="">
+                            Peoples
+                        </button>
+                        <button class="btn clear">
+                            <img src="../img/Clear.png" alt="">
+                            Clear all
+                        </button>
+                    </div>
+                    <div class="search col-md-4">
+                        <div class="input-wrap">
+                            <img src="../img/search.png" alt="">
+                            <input type="text" placeholder="Search by ID, PayPal, Client Name">
+                        </div>
+                    </div>
+                </div>
+                <div class="filters_results">
+                    <div class="users-img">
+                        <div class="img" style="background-image: url(../img/userpic1.png);"></div>
+                        <div class="img" style="background-image: url(../img/userpic2.png);"></div>
+                    </div>
+                    <div class="items">
+                        <button class="btn purple">
+                            No Payments
+                            <span><img src="../img/remove.png" alt=""></span>
+                        </button>
+                        <button class="btn blue">
+                            Not Started
+                            <span><img src="../img/remove.png" alt=""></span>
+                        </button>
+                        <button class="btn green">
+                            WOrking
+                            <span><img src="../img/remove.png" alt=""></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="admin-hire">
+                    <div class="hire-data">
+                        <div class="left-wrap">
+                            <div class="block">
+                                <div class="row">
+                                    <div class="col-sm-10 d-flex p-0">
+                                        <div class="user_info col-sm-2">
+                                            <span class="text-secondary">#</span>
+                                            <strong>1</strong>
+                                        </div>
+                                        <div class="user_info col-sm-4">
+                                            <span class="text-secondary">ID:</span>
+                                            <strong>2938</strong>
+                                        </div>
+                                        <div class="user_info col-sm-3">
+                                            <span class="text-secondary">Status:</span>
+                                            <strong class="pending">Pending</strong>
+                                        </div>
+                                    </div>
+                                    <div class="user_info col-sm-2">
+                                        <div class="icons">
+                                            <div class="edit">
+                                                <img src="../img/edit1.png" alt="">
+                                            </div>
+                                            <div class="hide">
+                                                <img src="../img/hide1.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="requirement col-md-12">
+                                        <h1>Web Designer needed for modifying website on Brizy (the platform similar to Tilda or Wix)</h1>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <button class="btn yellow">Checked</button>
+                                        <button class="btn blue">Not Started</button>
+                                        <button class="btn purple">No Payments</button>
+                                        <button class="btn silver"><img src="../img/plus.png" alt=""> Add Label</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block">
+                                <div class="row">
+                                    <div class="col-sm-10 d-flex p-0">
+                                        <div class="user_info col-sm-2 activity">
+                                            <span class="text-secondary">Today Worked</span>
+                                            <strong>04:20</strong>
+                                        </div>
+                                        <div class="user_info col-sm-2 activity">
+                                            <span class="text-secondary">Pay Rate</span>
+                                            <strong>$25</strong>
+                                        </div>
+                                        <div class="user_info col-sm-2 activity">
+                                            <span class="text-secondary">Weekly Limit</span>
+                                            <strong>30 hours</strong>
+                                        </div>
+                                        <div class="user_info col-sm-2 activity">
+                                            <span class="text-secondary">Unpaid hours</span>
+                                            <strong>01:00</strong>
+                                        </div>
+                                    </div>
+                                    <div class="user_info col-sm-2">
+                                        <div class="icons">
+                                            <a href="">View activity</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block">
+                                <div class="row">
+                                    <div class="col-sm-10 d-flex p-0">
+                                        <div class="user_info col-sm-4 activity d-flex">
+                                            <div class="img"><img src="../img/icon1.png" alt=""></div>
+                                            <div>
+                                                <strong>Baruch Colombano</strong>
+                                                <span class="text-secondary">brad.wheeler@example.com</span>
+                                            </div>
+                                        </div>
+                                        <div class="user_info col-sm-4 activity d-flex">
+                                            <div class="img"><img src="../img/icon2.png" alt=""></div>
+                                            <div>
+                                                <strong>Annette Murphy</strong>
+                                                <span class="text-secondary">max.terry@example.com</span>
+                                            </div>
+                                        </div>
+                                        <div class="user_info col-sm-4 activity d-flex">
+                                            <div class="img"><img src="../img/icon3.png" alt=""></div>
+                                            <div>
+                                                <strong>0 Messages</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block">
+                                <div class="row">
+                                    <div class="col-sm-10 d-flex p-0 ">
+                                        <div class="user_info col-sm-4 activity">
+                                            <span class="text-secondary">Developers</span>
+                                            <div class="users-img">
+                                                <div class="img" style="background-image: url(../img/userpic3.png);"></div>
+                                                <div class="img" style="background-image: url(../img/userpic4.png);"></div>
+                                                <div class="img" style="background-image: url();"><span>rk</span></div>
+                                                <div class="img" style="background-image: url(../img/userpic5.png);"></div>
+                                                <div class="img plus"><img src="../img/plus.png" alt=""></div>
+                                            </div>
+                                        </div>
+                                        <div class="user_info col-sm-4 activity">
+                                            <span class="text-secondary">Managers</span>
+                                            <div class="users-img">
+                                                <div class="img" style="background-image: url(../img/userpic6.png);"></div>
+                                                <div class="img" style="background-image: url(../img/userpic7.png);"></div>
+                                                <div class="img plus"><img src="../img/plus.png" alt=""></div>
+                                            </div>
+                                        </div>
+                                        <div class="user_info col-sm-4 activity to-dos">
+                                            <div>
+                                                <span class="text-secondary">To-Dos</span>
+                                                <strong>No To-Dos</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="user_info col-sm-2">
+                                        <div class="icons">
+                                            <a href=""><img src="../img/plus_orange.png" alt="">Add To-Do</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="right-wrap">
+                            <div class="not_info">
+                            <div class="title">
+                                <h1>Recent Notes</h1>
+                                <div class="view">
+                                    <a href="">
+                                        View all
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="notes-wrap">
+                                <div class="notes">
+                                    <div class="title">
+                                        <div class="name_date">
+                                            <div class="name red_color">Davit</div>
+                                            <div class="date">10.01.2019</div>
+                                        </div>
+                                        <div class="important">
+                                            <span>unmark</span>
+                                            <h1>Important</h1>
+                                        </div>
+                                    </div>
+                                    <div class="text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo et ut suscipit magnis elit faucibus sed velit.
+                                    </div>
+                                </div>
+                                <div class="notes">
+                                    <div class="title">
+                                        <div class="name_date">
+                                            <div class="name blue_color">Lana</div>
+                                            <div class="date">90.01.2019</div>
+                                        </div>
+                                    </div>
+                                    <div class="text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    </div>
+                                </div>
+                                <div class="notes">
+                                    <div class="title">
+                                        <div class="name_date">
+                                            <div class="name green_color">Maria</div>
+                                            <div class="date">8.01.2019</div>
+                                        </div>
+                                    </div>
+                                    <div class="text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo et ut suscipit magnis.
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                            <div class="add_note">
+                                <div class="input-wrap">
+                                    <input type="text" placeholder="Add note...">
+                                </div>
+                                <div class="add_wrap">
+                                    <div class="btn-wrap">
+                                        <button class="btn">With checkbox</button>
+                                        <button class="btn">Important</button>
+                                    </div>
+                                    <div class="add"><img src="../img/add_note.png" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="hire-data">
+                        <div class="left-wrap">
+                            <div class="block">
+                                <div class="row">
+                                    <div class="col-sm-10 d-flex p-0">
+                                        <div class="user_info col-sm-2">
+                                            <span class="text-secondary">#</span>
+                                            <strong>2</strong>
+                                        </div>
+                                        <div class="user_info col-sm-4">
+                                            <span class="text-secondary">ID:</span>
+                                            <strong>2938</strong>
+                                        </div>
+                                        <div class="user_info col-sm-3">
+                                            <span class="text-secondary">Status:</span>
+                                            <strong class="active">Active</strong>
+                                        </div>
+                                    </div>
+                                    <div class="user_info col-sm-2">
+                                        <div class="icons">
+                                            <div class="edit">
+                                                <img src="../img/edit1.png" alt="">
+                                            </div>
+                                            <div class="hide">
+                                                <img src="../img/hide1.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="requirement col-md-12">
+                                        <h1>Needed Designer for Re-design of Existing Mobile App</h1>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <button class="btn green">WOrking</button>
+                                        <button class="btn silver"><img src="../img/plus.png" alt=""> Add Label</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block">
+                                <div class="row">
+                                    <div class="col-sm-10 d-flex p-0">
+                                        <div class="user_info col-sm-2 activity">
+                                            <span class="text-secondary">Today Worked</span>
+                                            <strong>04:20</strong>
+                                        </div>
+                                        <div class="user_info col-sm-2 activity">
+                                            <span class="text-secondary">Pay Rate</span>
+                                            <strong>$25</strong>
+                                        </div>
+                                        <div class="user_info col-sm-2 activity">
+                                            <span class="text-secondary">Weekly Limit</span>
+                                            <strong>30 hours</strong>
+                                        </div>
+                                        <div class="user_info col-sm-2 activity">
+                                            <span class="text-secondary">Unpaid hours</span>
+                                            <strong>01:00</strong>
+                                        </div>
+                                    </div>
+                                    <div class="user_info col-sm-2">
+                                        <div class="icons">
+                                            <a href="">View activity</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block">
+                                <div class="row">
+                                    <div class="col-sm-10 d-flex p-0">
+                                        <div class="user_info col-sm-4 activity d-flex">
+                                            <div class="img"><img src="../img/icon1.png" alt=""></div>
+                                            <div>
+                                                <strong>Baruch Colombano</strong>
+                                                <span class="text-secondary">brad.wheeler@example.com</span>
+                                            </div>
+                                        </div>
+                                        <div class="user_info col-sm-4 activity d-flex">
+                                            <div class="img"><img src="../img/icon2.png" alt=""></div>
+                                            <div>
+                                                <strong>Annette Murphy</strong>
+                                                <span class="text-secondary">max.terry@example.com</span>
+                                            </div>
+                                        </div>
+                                        <div class="user_info col-sm-4 activity d-flex">
+                                            <div class="img"><img src="../img/icon3.png" alt=""></div>
+                                            <div>
+                                                <strong>32 Messages</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block">
+                                <div class="row">
+                                    <div class="col-sm-10 d-flex p-0 ">
+                                        <div class="user_info col-sm-4 activity">
+                                            <span class="text-secondary">Developers</span>
+                                            <div class="users-img">
+                                                <div class="img" style="background-image: url(../img/userpic3.png);"></div>
+                                                <div class="img" style="background-image: url(../img/userpic4.png);"></div>
+                                                <div class="img plus"><img src="../img/plus.png" alt=""></div>
+                                            </div>
+                                        </div>
+                                        <div class="user_info col-sm-4 activity">
+                                            <span class="text-secondary">Managers</span>
+                                            <div class="users-img">
+                                                <div class="img" style="background-image: url(../img/userpic7.png);"></div>
+                                                <div class="img plus"><img src="../img/plus.png" alt=""></div>
+                                            </div>
+                                        </div>
+                                        <div class="user_info col-sm-4 activity to-dos">
+                                            <div>
+                                                <span class="text-secondary">To-Dos</span>
+                                                <strong> Build homepage, Redesign adm... </strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="user_info col-sm-2">
+                                        <div class="icons">
+                                            <a href=""><img src="../img/plus_orange.png" alt="">Add To-Do</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right-wrap">
+                            <div class="not_info">
+                            <div class="title">
+                                <h1>Recent Notes</h1>
+                                <div class="view">
+                                    <a href="">
+                                        View all
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="notes-wrap">
+                                <div class="notes">
+                                    <div class="title">
+                                        <div class="name_date">
+                                            <div class="name red_color">Davit</div>
+                                            <div class="date">10.01.2019</div>
+                                        </div>
+                                        <div class="important">
+                                            <span>unmark</span>
+                                            <h1>Important</h1>
+                                        </div>
+                                    </div>
+                                    <div class="text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo et ut suscipit magnis elit faucibus sed velit.
+                                    </div>
+                                </div>
+                                <div class="notes">
+                                    <div class="title">
+                                        <div class="name_date">
+                                            <div class="name blue_color">Lana</div>
+                                            <div class="date">90.01.2019</div>
+                                        </div>
+                                    </div>
+                                    <div class="text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    </div>
+                                </div>
+                                <div class="notes">
+                                    <div class="title">
+                                        <div class="name_date">
+                                            <div class="name green_color">Maria</div>
+                                            <div class="date">8.01.2019</div>
+                                        </div>
+                                    </div>
+                                    <div class="text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo et ut suscipit magnis.
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                            <div class="add_note">
+                                <div class="input-wrap">
+                                    <input type="text" placeholder="Add note...">
+                                </div>
+                                <div class="add_wrap">
+                                    <div class="btn-wrap">
+                                        <button class="btn">With checkbox</button>
+                                        <button class="btn">Important</button>
+                                    </div>
+                                    <div class="add"><img src="../img/add_note.png" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+</body>
+
+</html>
