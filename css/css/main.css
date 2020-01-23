@@ -306,7 +306,7 @@ a {
     margin-left: 32px;
     cursor: pointer; }
   .newNav .menu {
-    padding-right: 32px; }
+    padding-right: 16px; }
     .newNav .menu ul {
       display: flex; }
       .newNav .menu ul li {
