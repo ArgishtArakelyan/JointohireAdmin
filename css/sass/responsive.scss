@@ -5,12 +5,16 @@
 
 
 @media screen and (max-width: 1200px) {
-
+	.admin-hire .hire-data{
+		display: block;
+	}
 }//media
 
 
 @media screen and (max-width: 992px) {
- 
+	.hire-dashboard {
+		padding: 36px 16px;
+	}
 }//media
 
 

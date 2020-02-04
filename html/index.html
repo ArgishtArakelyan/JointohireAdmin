@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="">
     <meta name="author" content="">
-    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" /> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
     <link rel="stylesheet" href="../css/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/css/main.css">
     <link rel="stylesheet" href="../css/css/responsive.css">
@@ -24,13 +24,25 @@
                 <ul>
                     <li><img src="../img/ic_playlist_add.png" alt=""></li>
                     <li><img src="../img/icon6.png" alt=""><span></span></li>
-                    <li><img src="../img/icon7.png" alt=""> <span></span></li>
-                    <li class="logoutDropDown"><img src="../img/icon8.png" alt=""></li>
+                    <li class="drop-t-open"><img src="../img/icon7.png" alt=""><span></span></li>
+                    <li class="logoutDropDown drop-t-open">
+                        <img src="../img/icon8.png" alt="">
+
+                        <div class="dropdown-wrap eff03">
+                            <i class="fas fa-caret-up"></i>
+
+                            <ul class="dropdown-m">
+                                <li>
+                                    <a>Logout</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </nav>
         <div class="d-flex">
-            <div class="navbar-default sidebar">
+            <div class="navbar-default sidebar eff04">
                 <div class="sidebar-nav navbar-collapse">
                     <ul class="nav newSidebar in" id="side-menu">
                         <li>
@@ -222,16 +234,13 @@
                     </div>
                     <div class="items">
                         <button class="btn purple">
-                            No Payments
-                            <span><img src="../img/remove.png" alt=""></span>
+                            No Payments <span><img src="../img/remove.png" alt=""></span>
                         </button>
                         <button class="btn blue">
-                            Not Started
-                            <span><img src="../img/remove.png" alt=""></span>
+                            Not Started <span><img src="../img/remove.png" alt=""></span>
                         </button>
                         <button class="btn green">
-                            WOrking
-                            <span><img src="../img/remove.png" alt=""></span>
+                            WOrking <span><img src="../img/remove.png" alt=""></span>
                         </button>
                     </div>
                 </div>
@@ -282,33 +291,33 @@
                             <div class="block">
                                 <div class="row">
                                     <div class="col-sm-10 d-flex p-0">
-                                        <div class="user_info col-sm-2 activity">
+                                        <div class="user_info col-sm-3 activity">
                                             <span class="text-secondary">Today Worked</span>
                                             <strong>04:20</strong>
                                         </div>
-                                        <div class="user_info col-sm-2 activity">
+                                        <div class="user_info col-sm-3 activity">
                                             <span class="text-secondary">Pay Rate</span>
                                             <strong>$25</strong>
                                         </div>
-                                        <div class="user_info col-sm-2 activity">
+                                        <div class="user_info col-sm-3 activity">
                                             <span class="text-secondary">Weekly Limit</span>
                                             <strong>30 hours</strong>
                                         </div>
-                                        <div class="user_info col-sm-2 activity">
+                                        <div class="user_info col-sm-3 activity">
                                             <span class="text-secondary">Unpaid hours</span>
                                             <strong>01:00</strong>
                                         </div>
                                     </div>
                                     <div class="user_info col-sm-2">
                                         <div class="icons">
-                                            <a href="">View activity</a>
+                                            <a class="view_activity">View activity</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="block">
                                 <div class="row">
-                                    <div class="col-sm-10 d-flex p-0">
+                                    <div class="col-sm-12 d-flex p-0">
                                         <div class="user_info col-sm-4 activity d-flex">
                                             <div class="img"><img src="../img/icon1.png" alt=""></div>
                                             <div>
@@ -374,9 +383,7 @@
                             <div class="title">
                                 <h1>Recent Notes</h1>
                                 <div class="view">
-                                    <a href="">
-                                        View all
-                                    </a>
+                                    <a class="all_notes">View all</a>
                                 </div>
                             </div>
                             <div class="notes-wrap">
@@ -392,7 +399,7 @@
                                         </div>
                                     </div>
                                     <div class="text">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo et ut suscipit magnis elit faucibus sed velit.
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo tempore, dolorem, optio repellendus unde sint vero rem fugiat, dolorum porro qui ratione neque fuga omnis placeat totam quasi eius. Tempora, assumenda, eveniet.
                                     </div>
                                 </div>
                                 <div class="notes">
@@ -403,7 +410,7 @@
                                         </div>
                                     </div>
                                     <div class="text">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos earum, a eaque ducimus nemo error voluptate ratione nostrum accusamus adipisci, quos illo dignissimos at.
                                     </div>
                                 </div>
                                 <div class="notes">
@@ -412,9 +419,16 @@
                                             <div class="name green_color">Maria</div>
                                             <div class="date">8.01.2019</div>
                                         </div>
+
+ 
+                                        <label class="checkbox">
+                                            <input type="checkbox" checked="true">
+                                            <span class="label-text"></span>
+                                        </label>
+
                                     </div>
                                     <div class="text">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo et ut suscipit magnis.
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, recusandae sed voluptatibus vero illo! Odio consequuntur, sequi voluptatum totam architecto eos eius quae libero ullam reiciendis eaque vel neque, voluptatem quas. Inventore non vero eos ad, provident nobis corrupti repudiandae.
                                     </div>
                                 </div>
 
@@ -436,14 +450,6 @@
                             </div>
                         </div>
                     </div>
-
-
-
-
-
-
-
-
 
 
 
@@ -492,33 +498,33 @@
                             <div class="block">
                                 <div class="row">
                                     <div class="col-sm-10 d-flex p-0">
-                                        <div class="user_info col-sm-2 activity">
+                                        <div class="user_info col-sm-3 activity">
                                             <span class="text-secondary">Today Worked</span>
                                             <strong>04:20</strong>
                                         </div>
-                                        <div class="user_info col-sm-2 activity">
+                                        <div class="user_info col-sm-3 activity">
                                             <span class="text-secondary">Pay Rate</span>
                                             <strong>$25</strong>
                                         </div>
-                                        <div class="user_info col-sm-2 activity">
+                                        <div class="user_info col-sm-3 activity">
                                             <span class="text-secondary">Weekly Limit</span>
                                             <strong>30 hours</strong>
                                         </div>
-                                        <div class="user_info col-sm-2 activity">
+                                        <div class="user_info col-sm-3 activity">
                                             <span class="text-secondary">Unpaid hours</span>
                                             <strong>01:00</strong>
                                         </div>
                                     </div>
                                     <div class="user_info col-sm-2">
                                         <div class="icons">
-                                            <a href="">View activity</a>
+                                            <a class="view_activity">View activity</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="block">
                                 <div class="row">
-                                    <div class="col-sm-10 d-flex p-0">
+                                    <div class="col-sm-12 d-flex p-0">
                                         <div class="user_info col-sm-4 activity d-flex">
                                             <div class="img"><img src="../img/icon1.png" alt=""></div>
                                             <div>
@@ -536,7 +542,7 @@
                                         <div class="user_info col-sm-4 activity d-flex">
                                             <div class="img"><img src="../img/icon3.png" alt=""></div>
                                             <div>
-                                                <strong>32 Messages</strong>
+                                                <strong class="true">32 Messages</strong>
                                             </div>
                                         </div>
                                     </div>
@@ -580,9 +586,7 @@
                             <div class="title">
                                 <h1>Recent Notes</h1>
                                 <div class="view">
-                                    <a href="">
-                                        View all
-                                    </a>
+                                    <a class="all_notes">View all</a>
                                 </div>
                             </div>
                             <div class="notes-wrap">
@@ -618,6 +622,217 @@
                                             <div class="name green_color">Maria</div>
                                             <div class="date">8.01.2019</div>
                                         </div>
+
+                                        <label class="checkbox">
+                                            <input type="checkbox">
+                                            <span class="label-text"></span>
+                                        </label>
+                                    </div>
+                                    <div class="text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo et ut suscipit magnis.
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                            <div class="add_note">
+                                <div class="input-wrap">
+                                    <input type="text" placeholder="Add note...">
+                                </div>
+                                <div class="add_wrap">
+                                    <div class="btn-wrap">
+                                        <button class="btn">With checkbox</button>
+                                        <button class="btn">Important</button>
+                                    </div>
+                                    <div class="add"><img src="../img/add_note.png" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                                        <div class="hire-data">
+                        <div class="left-wrap">
+                            <div class="block">
+                                <div class="row">
+                                    <div class="col-sm-10 d-flex p-0">
+                                        <div class="user_info col-sm-2">
+                                            <span class="text-secondary">#</span>
+                                            <strong>1</strong>
+                                        </div>
+                                        <div class="user_info col-sm-4">
+                                            <span class="text-secondary">ID:</span>
+                                            <strong>2938</strong>
+                                        </div>
+                                        <div class="user_info col-sm-3">
+                                            <span class="text-secondary">Status:</span>
+                                            <strong class="pending">Pending</strong>
+                                        </div>
+                                    </div>
+                                    <div class="user_info col-sm-2">
+                                        <div class="icons">
+                                            <div class="edit">
+                                                <img src="../img/edit1.png" alt="">
+                                            </div>
+                                            <div class="hide">
+                                                <img src="../img/hide1.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="requirement col-md-12">
+                                        <h1>Web Designer needed for modifying website on Brizy (the platform similar to Tilda or Wix)</h1>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <button class="btn yellow">Checked</button>
+                                        <button class="btn blue">Not Started</button>
+                                        <button class="btn purple">No Payments</button>
+                                        <button class="btn silver"><img src="../img/plus.png" alt=""> Add Label</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block">
+                                <div class="row">
+                                    <div class="col-sm-10 d-flex p-0">
+                                        <div class="user_info col-sm-3 activity">
+                                            <span class="text-secondary">Today Worked</span>
+                                            <strong>04:20</strong>
+                                        </div>
+                                        <div class="user_info col-sm-3 activity">
+                                            <span class="text-secondary">Pay Rate</span>
+                                            <strong>$25</strong>
+                                        </div>
+                                        <div class="user_info col-sm-3 activity">
+                                            <span class="text-secondary">Weekly Limit</span>
+                                            <strong>30 hours</strong>
+                                        </div>
+                                        <div class="user_info col-sm-3 activity">
+                                            <span class="text-secondary">Unpaid hours</span>
+                                            <strong>01:00</strong>
+                                        </div>
+                                    </div>
+                                    <div class="user_info col-sm-2">
+                                        <div class="icons">
+                                            <a class="view_activity">View activity</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block">
+                                <div class="row">
+                                    <div class="col-sm-12 d-flex p-0">
+                                        <div class="user_info col-sm-4 activity d-flex">
+                                            <div class="img"><img src="../img/icon1.png" alt=""></div>
+                                            <div>
+                                                <strong>Baruch Colombano</strong>
+                                                <span class="text-secondary">brad.wheeler@example.com</span>
+                                            </div>
+                                        </div>
+                                        <div class="user_info col-sm-4 activity d-flex">
+                                            <div class="img"><img src="../img/icon2.png" alt=""></div>
+                                            <div>
+                                                <strong>Annette Murphy</strong>
+                                                <span class="text-secondary">max.terry@example.com</span>
+                                            </div>
+                                        </div>
+                                        <div class="user_info col-sm-4 activity d-flex">
+                                            <div class="img"><img src="../img/icon3.png" alt=""></div>
+                                            <div>
+                                                <strong>0 Messages</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block">
+                                <div class="row">
+                                    <div class="col-sm-10 d-flex p-0 ">
+                                        <div class="user_info col-sm-4 activity">
+                                            <span class="text-secondary">Developers</span>
+                                            <div class="users-img">
+                                                <div class="img" style="background-image: url(../img/userpic3.png);"></div>
+                                                <div class="img" style="background-image: url(../img/userpic4.png);"></div>
+                                                <div class="img" style="background-image: url();"><span>rk</span></div>
+                                                <div class="img" style="background-image: url(../img/userpic5.png);"></div>
+                                                <div class="img plus"><img src="../img/plus.png" alt=""></div>
+                                            </div>
+                                        </div>
+                                        <div class="user_info col-sm-4 activity">
+                                            <span class="text-secondary">Managers</span>
+                                            <div class="users-img">
+                                                <div class="img" style="background-image: url(../img/userpic6.png);"></div>
+                                                <div class="img" style="background-image: url(../img/userpic7.png);"></div>
+                                                <div class="img plus"><img src="../img/plus.png" alt=""></div>
+                                            </div>
+                                        </div>
+                                        <div class="user_info col-sm-4 activity to-dos">
+                                            <div>
+                                                <span class="text-secondary">To-Dos</span>
+                                                <strong>No To-Dos</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="user_info col-sm-2">
+                                        <div class="icons">
+                                            <a href=""><img src="../img/plus_orange.png" alt="">Add To-Do</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="right-wrap">
+                            <div class="not_info">
+                            <div class="title">
+                                <h1>Recent Notes</h1>
+                                <div class="view">
+                                    <a class="all_notes">View all</a>
+                                </div>
+                            </div>
+                            <div class="notes-wrap">
+                                <div class="notes">
+                                    <div class="title">
+                                        <div class="name_date">
+                                            <div class="name red_color">Davit</div>
+                                            <div class="date">10.01.2019</div>
+                                        </div>
+                                        <div class="important">
+                                            <span>unmark</span>
+                                            <h1>Important</h1>
+                                        </div>
+                                    </div>
+                                    <div class="text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo et ut suscipit magnis elit faucibus sed velit.
+                                    </div>
+                                </div>
+                                <div class="notes">
+                                    <div class="title">
+                                        <div class="name_date">
+                                            <div class="name blue_color">Lana</div>
+                                            <div class="date">90.01.2019</div>
+                                        </div>
+                                    </div>
+                                    <div class="text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    </div>
+                                </div>
+                                <div class="notes">
+                                    <div class="title">
+                                        <div class="name_date">
+                                            <div class="name green_color">Maria</div>
+                                            <div class="date">8.01.2019</div>
+                                        </div>
+
+ 
+                                        <label class="checkbox">
+                                            <input type="checkbox" checked="true">
+                                            <span class="label-text"></span>
+                                        </label>
+
                                     </div>
                                     <div class="text">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo et ut suscipit magnis.
@@ -646,7 +861,172 @@
             </div>
         </div>
     </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="popup all_notes_popup">
+    <div class="dialog">
+        <div class="form-box">
+
+            <img class="close-popup" src="../img/Clear.png" alt="">
+            <div class="top_wrap">
+                <h1>Web Designer needed for modifying website on Brizy (the platform similar to Tilda or Wix)</h1>
+
+                <div class="client_info">
+                    <div class="row">
+                        <div class="col-sm-10 d-flex p-0">
+                            <div class="user_info col-sm-4">
+                                <span class="text-secondary">ID</span>
+                                <strong>2308</strong>
+                            </div>
+
+                            <div class="user_info col-sm-6">
+                                <span class="text-secondary">Client</span>
+                                <strong>Theresa Warren</strong>
+                            </div>
+     
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-box-wrap">
+                <div class="notes-wrap">
+                    <div class="notes">
+                        <div class="title">
+                            <div class="name_date">
+                                <div class="name red_color">Davit</div>
+                                <div class="date">10.01.2019</div>
+                            </div>
+                            <div class="important">
+                                <span>unmark</span>
+                                <h1>Important</h1>
+                            </div>
+                        </div>
+                        <div class="text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium officia asperiores, ipsa suscipit itaque dolor natus esse pariatur mollitia facilis doloribus. Reiciendis architecto cumque voluptates at, temporibus quam eos iure?
+                        </div>
+                    </div>
+                    <div class="notes">
+                        <div class="title">
+                            <div class="name_date">
+                                <div class="name blue_color">Lana</div>
+                                <div class="date">90.01.2019</div>
+                            </div>
+                        </div>
+                        <div class="text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, laboriosam.
+                        </div>
+                    </div>
+
+                    <div class="notes">
+                        <div class="title">
+                            <div class="name_date">
+                                <div class="name purple_color">Artur</div>
+                                <div class="date">8.01.2019</div>
+                            </div>
+
+
+                            <label class="checkbox">
+                                <input type="checkbox" checked="true">
+                                <span class="label-text"></span>
+                            </label>
+
+                        </div>
+                        <div class="text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi vitae esse, illo eius modi! Exercitationem esse, dicta voluptate iure sit beatae sunt, animi? Voluptatibus porro tempora iusto quo esse, natus.
+                        </div>
+                    </div>
+                    <div class="notes">
+                        <div class="title">
+                            <div class="name_date">
+                                <div class="name green_color">Maria</div>
+                                <div class="date">8.01.2019</div>
+                            </div>
+
+
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <span class="label-text"></span>
+                            </label>
+
+                        </div>
+                        <div class="text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores sit, dolorem officiis vero molestiae! Cupiditate quisquam consequatur praesentium voluptatem ut! Eum corporis veniam praesentium aliquam sit, animi est eaque quasi, minima, id reiciendis rerum harum nostrum maxime esse commodi fuga fugiat, amet. Molestiae voluptas sunt labore vel ducimus recusandae nostrum cum fuga distinctio deleniti quidem modi aspernatur dolorem mollitia, odio.voluptatibus id libero nemo.voluptatibus id libero nemo.voluptatibus id libero nemo.
+                        </div>
+                    </div>
+                    <div class="notes">
+                        <div class="title">
+                            <div class="name_date">
+                                <div class="name purple_color">Artur</div>
+                                <div class="date">8.01.2019</div>
+                            </div>
+
+
+                            <label class="checkbox">
+                                <input type="checkbox" checked="true">
+                                <span class="label-text"></span>
+                            </label>
+
+                        </div>
+                        <div class="text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi vitae esse, illo eius modi! Exercitationem esse, dicta voluptate iure sit beatae sunt, animi? Voluptatibus porro tempora iusto quo esse, natus.
+                        </div>
+                    </div>
+                    <div class="notes">
+                        <div class="title">
+                            <div class="name_date">
+                                <div class="name red_color">Davit</div>
+                                <div class="date">10.01.2019</div>
+                            </div>
+                        </div>
+                        <div class="text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum quibusdam adipisci doloremque qui minima quos architecto at, voluptas! Minima sunt modi quae voluptatum voluptas, sed, sint ut ex temporibus perferendis quas. Amet deserunt, impedit, obcaecati aperiam necessitatibus non animi. Laborum aspernatur impedit adipisci ut dicta ipsum voluptatibus id libero nemo.voluptatibus id libero nemo.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="pop_add_note">
+
+                <div class="add_note">
+                    <div class="img" style="background-image: url(../img/userpic6.png);"></div>
+
+                    <div class="input-wrap">
+                        <input type="text" placeholder="Add note...">
+
+                        <div class="add"><img src="../img/add_note.png" alt=""></div>
+                    </div>
+                </div>
+                
+                <div class="btn-wrap">
+                    <button class="btn">With checkbox</button>
+                    <button class="btn">Important</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="close-popup"></div>
     </div>
+</div>
+
+
+
+
     <script type="text/javascript" src="../js/jquery.js"></script>
     <script type="text/javascript" src="../js/main.js"></script>
 </body>
