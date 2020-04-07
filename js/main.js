@@ -46,3 +46,11 @@ $(document).on("click",".close-popup",function() {
     $('.popup').fadeOut();
     $('body').removeClass('hidden-b');
 }); 
+
+
+ 
+    $( ".sortable-wrap ul" ).sortable({ 
+        handle: '.sort_icon' ,
+        axis: "y"
+    });
+ 
