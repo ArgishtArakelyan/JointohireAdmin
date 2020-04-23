@@ -1,8 +1,12 @@
 @media screen and (max-width: 1200px) {
   .admin-hire .hire-data {
-    display: block; } }
+    display: block;
+  }
+}
+
 @media screen and (max-width: 992px) {
   .hire-dashboard {
-    padding: 36px 16px; } }
-
+    padding: 36px 16px;
+  }
+}
 /*# sourceMappingURL=responsive.css.map */

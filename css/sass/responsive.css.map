@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "AAMA,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,MAAM;EACnC,AAAA,WAAW,CAAC,UAAU,CAAA;IACrB,OAAO,EAAE,KAAK;GACd;;;AAIF,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK;EAClC,AAAA,eAAe,CAAC;IACf,OAAO,EAAE,SAAS;GAClB",
+    "sources": [
+        "responsive.scss",
+        "_mixins.scss",
+        "_settings.scss"
+    ],
+    "names": [],
+    "file": "responsive.css"
+}

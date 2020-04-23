@@ -48,9 +48,60 @@ $(document).on("click",".close-popup",function() {
 }); 
 
 
+$(document).on("click",".task-current .add_task >button",function() {
+     $('.add_task .new_task').addClass('active');
+     if ($(".add_task .new_task").hasClass("active")) {
+        $(this).slideUp();
+     }else{
+        $(this).slideDown();
+     }
+}); 
+
+$(document).on("click",".add_task .new_task .closeAddTask",function() {
+    $(".task-current .add_task >button").show();
+    $(".add_task .new_task").removeClass("active")
+}); 
+
+$(document).on("click","#addToDosModal .task-list .checkbox input",function() {
+    //var taskItems = $(this).parent();
+    var currentItems = $('ul.task-current');
+    var completedItems = $('ul.task-completed');
+
  
-    $( ".sortable-wrap ul" ).sortable({ 
-        handle: '.sort_icon' ,
-        axis: "y"
-    });
+    if ($(this).parent().parent().hasClass('item-checked')) {
+        $(this).parent().parent().removeClass('item-checked').prependTo(currentItems).find('input[type="checkbox"]').prop('checked', false);
+    }
+    else {
+        $(this).parent().parent().addClass('item-checked').prependTo(completedItems).find('input[type="checkbox"]').prop('checked', true);
+    }
+
+}); 
+
+
+$(document).on("click","#addToDosModal .task-list li >span",function() {
+    $('.ToDosAddTask').hide();
+    $('.ToDosComments').show();
+    $('.back_ToDosAddTask').show();
+
+}); 
+
+$(document).on("click",".back_ToDosAddTask",function() {
+    $('.ToDosAddTask').show();
+    $('.ToDosComments').hide();
+    $(this).hide();
+}); 
+
+
+
+
  
+$( ".sortable-wrap ul" ).sortable({ 
+    handle: '.sort_icon' ,
+    axis: "y"
+});
+
+
+ 
+ 
+
+$('#dueDate').datepicker();
