@@ -10,7 +10,15 @@ $(window).resize(function(){
 	}
 });
 
+$(document).ready(function domReady() {
+    $(".js-select2").select2({
+        
+        placeholder: "Search by ID, PayPal, Client Name",
+        allowClear: true, 
+    });
+    
 
+});
 
 
 $('.drop-t-open').on('click', function(e) {

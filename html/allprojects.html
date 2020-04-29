@@ -8,6 +8,7 @@
     <meta name="author" content="">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
     <link rel="stylesheet" href="../css/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/css/select2.css">
     <link rel="stylesheet" href="../css/sass/main.css">
     <link rel="stylesheet" href="../css/sass/responsive.css">
 </head>
@@ -325,8 +326,22 @@
                     <div class="search col-md-4">
                         <div class="input-wrap pl_36">
                             <img src="../img/search.png" alt="">
-                            <input type="text" placeholder="Search by ID, PayPal, Client Name">
+                            <!-- <input type="text" placeholder="Search by ID, PayPal, Client Name"> -->
+                            <select class="js-select2">
+                                <option></option>
+                                <optgroup label="ID">
+                                    <option>No matches</option>
+                                </optgroup>
+                                <optgroup label="Client Name">
+                                    <option>Harold Murphy</option>
+                                </optgroup>
+                                <optgroup label="PayPal Email">
+                                    <option>harold.hopkins88@example.com</option>
+                                </optgroup>
+                            </select>
                         </div>
+
+
                     </div>
                 </div>
                 <div class="filters_results">
@@ -1241,6 +1256,7 @@
     <script type="text/javascript" src="../js/jquery.js"></script>
     <script type="text/javascript" src="../js/jquery-ui.js"></script>
     <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/select2.full.js"></script>
     <script type="text/javascript" src="../js/main.js"></script>
 </body>
 
