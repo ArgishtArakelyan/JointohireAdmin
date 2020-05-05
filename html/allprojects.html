@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
     <link rel="stylesheet" href="../css/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/css/select2.css">
+    <link rel="stylesheet" href="../css/css/jquery-ui.css">
     <link rel="stylesheet" href="../css/sass/main.css">
     <link rel="stylesheet" href="../css/sass/responsive.css">
 </head>
@@ -595,7 +596,7 @@
                                     </div>
                                     <div class="user_info col-sm-2">
                                         <div class="icons">
-                                            <a href=""><img src="../img/plus_orange.png" alt="">Add To-Do</a>
+                                            <a data-toggle="modal" data-target="#addToDosModal"><img src="../img/plus_orange.png" alt="">Add To-Do</a> 
                                         </div>
                                     </div>
                                 </div>
@@ -799,7 +800,7 @@
                                     </div>
                                     <div class="user_info col-sm-2">
                                         <div class="icons">
-                                            <a href=""><img src="../img/plus_orange.png" alt="">Add To-Do</a>
+                                            <a data-toggle="modal" data-target="#addToDosModal"><img src="../img/plus_orange.png" alt="">Add To-Do</a> 
                                         </div>
                                     </div>
                                 </div>
@@ -1002,7 +1003,7 @@
                                     </div>
                                     <div class="user_info col-sm-2">
                                         <div class="icons">
-                                            <a href=""><img src="../img/plus_orange.png" alt="">Add To-Do</a>
+                                            <a data-toggle="modal" data-target="#addToDosModal"><img src="../img/plus_orange.png" alt="">Add To-Do</a> 
                                         </div>
                                     </div>
                                 </div>
@@ -1252,6 +1253,194 @@
 
 
 
+
+
+
+<div class="modal fade" id="addToDosModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="df-title">
+                    <div class="back_ToDosAddTask"><i class="fas fa-chevron-left"></i></div>
+                    <div>
+                        <h5 class="modal-title" id="exampleModalLabel">Creating a WordPress site with Elementor pro</h5>
+                        <p>Lorem ipsum ornare enim mattis sit duis urna tempus nibh at duis sed</p>
+                    </div>
+                </div>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+            <div class="ToDosAddTask eff03 active">
+                <div class="modal-body">
+                    <h3>Simple test list</h3>
+
+                    <ul class="task-list task-current">
+                        <li>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <span class="label-text"></span>
+                            </label>
+                            <span>Invite freelancer for a project or create project <span>4</span></span>
+                        </li>
+                        <li>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <span class="label-text"></span>
+                            </label>
+                            <span>View offer in case of pending <span>6</span></span>
+                        </li>
+                        <li>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <span class="label-text"></span>
+                            </label>
+                            <span>To-dos section</span>
+                        </li>
+
+                        <li class="add_task">
+                            <button>
+                                + <span>Add a task</span>
+                            </button>
+
+                            <div class="new_task eff03">
+                                <div class="form-group task_title">
+                                    <label for="recipient-name" class="col-form-label">New task</label>
+                                    <input type="text" class="form-control" placeholder="Task title" id="">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="recipient-name" class="col-form-label">Due date</label>
+                                    <i class="fas fa-calendar-day"></i>
+                                    <input type="text" class="form-control" placeholder="" id="dueDate">
+
+                                </div>
+
+                                <button type="button" class="btn">Add task</button>
+
+                                <div class="closeAddTask"><span>×</span></div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <h4>Completed tasks</h4>
+                    <ul class="task-list task-completed">
+                        <li>
+                            <label class="checkbox">
+                                <input type="checkbox" checked="true">
+                                <span class="label-text"></span>
+                            </label>
+                            <span>Task inner page <span>12</span></span>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="modal-footer">
+                    <div>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Add new list</label>
+                            <input type="text" class="form-control" placeholder="Name this list" id="">
+                        </div>
+                        <button type="button" class="btn btn-primary">Add list</button>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="ToDosComments eff03">
+                <div class="modal-body">
+                    <div class="top_wrap">
+                        <h1>Simple task title, lorem ipsum dolor sit</h1>
+                        <div class="date_comments">
+                            <div class="date">
+                                <img src="../img/icon21.png" alt="">
+                                Due date: 22 May 2019
+                            </div>
+
+                            <div class="comments">
+                                Comments <span>4</span>   
+                            </div>
+
+                            <div class="added_by">Added by Roman on Apr 17</div>  
+                        </div>
+                    </div>
+
+
+                    <div class="message_wrap">
+                        <ul>
+                            <li>
+                                <div class="img_name">
+                                    <div>
+                                        <div class="img" style="background-image: url();"><span>np</span></div>
+                                        <div class="name">Roman</div>
+                                    </div>
+
+                                    <div class="date">
+                                        <span>08:14 PM</span>
+                                        <div class="toolsDropDown">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="text">
+                                    Procure teachings extremely master consequences fault
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img_name">
+                                    <div>
+                                        <div class="img" style="background-image: url(../img/userpic3.png);"></div>
+                                        <div class="name">Roman</div>
+                                    </div>
+
+                                    <div class="date">
+                                        <span>08:14 PM</span>
+                                        <div class="toolsDropDown">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="text">
+                                    Who again except resultant ever toil there him: do born take, toil. Us complete avoids the system right know find ever has all a.
+
+                                    <ul class="screenshots">
+                                        <li>
+                                            <div class="download_btn"><img src="../img/download.png" alt=""></div>
+                                            <img src="../img/screen1.png" alt="">
+                                        </li>
+                                        <li>
+                                            <div class="download_btn"><img src="../img/download.png" alt=""></div>
+                                            <img src="../img/screen2.png" alt="">
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div> 
+                </div>
+                <div class="modal-footer">
+                    <div>
+                        <div class="form-group"> 
+                            <div class="img" style="background-image: url(../img/userpic3.png);"></div>
+                            <input type="text" class="form-control" placeholder="Add a comment or upload a file..." id="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
 
     <script type="text/javascript" src="../js/jquery.js"></script>
     <script type="text/javascript" src="../js/jquery-ui.js"></script>
