@@ -1820,6 +1820,440 @@ strong.active:before {
   color: #fff;
 }
 
+.TaskInnerPage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.TaskInnerPage .left-wrap {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-right: 24px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 2px 12px rgba(137, 138, 140, 0.1);
+          box-shadow: 0px 2px 12px rgba(137, 138, 140, 0.1);
+  border-radius: 6px;
+}
+
+.TaskInnerPage .left-wrap .top_wrap {
+  padding: 24px;
+  border-bottom: 1px solid #EBECED;
+}
+
+.TaskInnerPage .left-wrap .top_wrap h1 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+  color: #222426;
+}
+
+.TaskInnerPage .left-wrap .top_wrap span {
+  display: block;
+  margin-top: 12px;
+  font-size: 13px;
+  line-height: 12px;
+  color: #6B6C6F;
+}
+
+.TaskInnerPage .left-wrap .top_wrap .date_checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 12px;
+}
+
+.TaskInnerPage .left-wrap .top_wrap .date_checkbox .date {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 14px;
+  color: #404144;
+}
+
+.TaskInnerPage .left-wrap .top_wrap .date_checkbox .checkbox {
+  margin-left: 114px;
+}
+
+.TaskInnerPage .left-wrap .top_wrap .date_checkbox .checkbox input[type="checkbox"] + .label-text:before {
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;
+}
+
+.TaskInnerPage .left-wrap .top_wrap .date_checkbox .checkbox span {
+  margin-top: 0;
+  font-size: 14px;
+  line-height: 14px;
+  color: #EF6722;
+}
+
+.TaskInnerPage .left-wrap .message_wrap {
+  padding: 24px 10px 24px 24px;
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+
+.TaskInnerPage .left-wrap .message_wrap ::-webkit-scrollbar {
+  width: 6px;
+}
+
+.TaskInnerPage .left-wrap .message_wrap ::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+.TaskInnerPage .left-wrap .message_wrap ::-webkit-scrollbar-thumb {
+  background: #dcdcdd;
+  border-radius: 3px;
+}
+
+.TaskInnerPage .left-wrap .message_wrap ::-webkit-scrollbar-thumb:hover {
+  background: #aeaeae;
+}
+
+.TaskInnerPage .left-wrap .message_wrap .comments {
+  margin-bottom: 24px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  color: #222426;
+}
+
+.TaskInnerPage .left-wrap .message_wrap .comments span {
+  color: #fff;
+  background: #236EE8;
+  padding: 3px 6px;
+  margin-left: 6px;
+  border-radius: 4px;
+}
+
+.TaskInnerPage .left-wrap .message_wrap > ul {
+  padding-right: 14px;
+}
+
+.TaskInnerPage .left-wrap .message_wrap > ul li {
+  list-style: none;
+  margin-bottom: 24px;
+}
+
+.TaskInnerPage .left-wrap .message_wrap > ul li .img_name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.TaskInnerPage .left-wrap .message_wrap > ul li .img_name > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.TaskInnerPage .left-wrap .message_wrap > ul li .img_name .img {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 36px;
+          flex: 0 0 36px;
+  height: 36px;
+  margin-right: 12px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+.TaskInnerPage .left-wrap .message_wrap > ul li .img_name .img span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  color: #1371DC;
+  font-size: 14px;
+  background: #AED1FA;
+  line-height: normal;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.TaskInnerPage .left-wrap .message_wrap > ul li .img_name .name {
+  font-size: 14px;
+  color: #404144;
+  font-weight: 600;
+}
+
+.TaskInnerPage .left-wrap .message_wrap > ul li .img_name .date span {
+  font-size: 12px;
+  color: #A7A8AA;
+}
+
+.TaskInnerPage .left-wrap .message_wrap > ul li .img_name .date .toolsDropDown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.TaskInnerPage .left-wrap .message_wrap > ul li .img_name .date .toolsDropDown span {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 5px;
+          flex: 0 0 5px;
+  height: 5px;
+  margin-left: 2px;
+  background: #C5C6C7;
+  border-radius: 50%;
+  display: block;
+}
+
+.TaskInnerPage .left-wrap .message_wrap > ul li .text {
+  padding-left: 48px;
+  margin-top: 4px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #404144;
+}
+
+.TaskInnerPage .left-wrap .message_wrap > ul li .text .screenshots {
+  margin-top: 8px;
+  padding-left: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.TaskInnerPage .left-wrap .message_wrap > ul li .text .screenshots li {
+  width: 200px;
+  position: relative;
+  margin-right: 12px;
+  margin-bottom: 12px;
+}
+
+.TaskInnerPage .left-wrap .message_wrap > ul li .text .screenshots li:hover .download_btn {
+  display: block;
+}
+
+.TaskInnerPage .left-wrap .message_wrap > ul li .text .screenshots li img {
+  width: 100%;
+}
+
+.TaskInnerPage .left-wrap .message_wrap > ul li .text .screenshots li .download_btn {
+  width: 32px;
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  cursor: pointer;
+  display: none;
+}
+
+.TaskInnerPage .left-wrap .message_wrap .message_footer > div {
+  width: 100%;
+  padding-top: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.TaskInnerPage .left-wrap .message_wrap .message_footer > div .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-bottom: 0;
+  margin-right: 12px;
+}
+
+.TaskInnerPage .left-wrap .message_wrap .message_footer > div .form-group .img {
+  border: radius 50%;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 36px;
+  flex: 0 0 36px;
+  height: 36px;
+  margin-right: 12px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.TaskInnerPage .left-wrap .message_wrap .message_footer > div button {
+  background: #EF6722;
+  border-color: #EF6722;
+}
+
+.TaskInnerPage .right-wrap {
+  -webkit-box-flex: 0.6;
+      -ms-flex: 0.6;
+          flex: 0.6;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 2px 12px rgba(137, 138, 140, 0.1);
+          box-shadow: 0px 2px 12px rgba(137, 138, 140, 0.1);
+  border-radius: 6px;
+}
+
+.TaskInnerPage .right-wrap .top-wrap {
+  padding: 24px 24px 28px;
+  border-bottom: 1px solid #EBECED;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.TaskInnerPage .right-wrap .top-wrap h1 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+  color: #222426;
+}
+
+.TaskInnerPage .right-wrap .top-wrap span {
+  font-size: 13px;
+  line-height: 12px;
+  color: #A7A8AA;
+}
+
+.TaskInnerPage .right-wrap .item-wrap {
+  padding: 30px 24px 24px;
+}
+
+.TaskInnerPage .right-wrap .item-wrap .item {
+  padding-bottom: 24px;
+  padding-top: 24px;
+  border-bottom: 1px solid #EBECED;
+}
+
+.TaskInnerPage .right-wrap .item-wrap .item:first-child {
+  padding-top: 0;
+}
+
+.TaskInnerPage .right-wrap .item-wrap .item:last-child {
+  border: 0;
+  padding-bottom: 0;
+}
+
+.TaskInnerPage .right-wrap .item-wrap .item .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.TaskInnerPage .right-wrap .item-wrap .item .title img {
+  width: 18px;
+  margin-right: 10px;
+}
+
+.TaskInnerPage .right-wrap .item-wrap .item .title span {
+  font-size: 13px;
+  color: #A7A8AA;
+  font-weight: normal;
+}
+
+.TaskInnerPage .right-wrap .item-wrap .item ul {
+  margin-top: 24px;
+}
+
+.TaskInnerPage .right-wrap .item-wrap .item ul.completed {
+  margin-top: 13px;
+}
+
+.TaskInnerPage .right-wrap .item-wrap .item ul.completed li {
+  color: #898A8C;
+}
+
+.TaskInnerPage .right-wrap .item-wrap .item ul.completed li span {
+  background: #C5C6C7;
+}
+
+.TaskInnerPage .right-wrap .item-wrap .item ul li {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 600;
+  color: #404144;
+  margin-bottom: 18px;
+  list-style: none;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.TaskInnerPage .right-wrap .item-wrap .item ul li::after {
+  content: "";
+  width: 3px;
+  height: 100%;
+  margin: 4px;
+  position: absolute;
+  left: -28px;
+  top: -4px;
+  background: #EF6722;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.TaskInnerPage .right-wrap .item-wrap .item ul li.active::after, .TaskInnerPage .right-wrap .item-wrap .item ul li:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.TaskInnerPage .right-wrap .item-wrap .item ul li:last-child {
+  margin: 0;
+}
+
+.TaskInnerPage .right-wrap .item-wrap .item ul li span {
+  color: #fff;
+  background: #236EE8;
+  padding: 3px 6px;
+  margin-left: 6px;
+  border-radius: 4px;
+}
+
+.TaskInnerPage .right-wrap .item-wrap .item .task_title {
+  margin-top: 24px;
+  font-size: 13px;
+  line-height: 12px;
+  color: #898A8C;
+}
+
 .popup {
   position: fixed;
   top: 0;
@@ -2362,18 +2796,18 @@ strong.active:before {
   background: #aeaeae;
 }
 
-.ToDosComments .modal-body .message_wrap ul {
+.ToDosComments .modal-body .message_wrap > ul {
   padding-right: 14px;
   height: 360px;
   overflow-y: auto;
 }
 
-.ToDosComments .modal-body .message_wrap ul li {
+.ToDosComments .modal-body .message_wrap > ul li {
   list-style: none;
   margin-bottom: 24px;
 }
 
-.ToDosComments .modal-body .message_wrap ul li .img_name {
+.ToDosComments .modal-body .message_wrap > ul li .img_name {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2385,7 +2819,7 @@ strong.active:before {
           justify-content: space-between;
 }
 
-.ToDosComments .modal-body .message_wrap ul li .img_name > div {
+.ToDosComments .modal-body .message_wrap > ul li .img_name > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2394,7 +2828,7 @@ strong.active:before {
           align-items: center;
 }
 
-.ToDosComments .modal-body .message_wrap ul li .img_name .img {
+.ToDosComments .modal-body .message_wrap > ul li .img_name .img {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 36px;
           flex: 0 0 36px;
@@ -2408,7 +2842,7 @@ strong.active:before {
   position: relative;
 }
 
-.ToDosComments .modal-body .message_wrap ul li .img_name .img span {
+.ToDosComments .modal-body .message_wrap > ul li .img_name .img span {
   position: absolute;
   top: 0;
   left: 0;
@@ -2430,17 +2864,18 @@ strong.active:before {
           justify-content: center;
 }
 
-.ToDosComments .modal-body .message_wrap ul li .img_name .name {
+.ToDosComments .modal-body .message_wrap > ul li .img_name .name {
   font-size: 14px;
   color: #404144;
+  font-weight: 600;
 }
 
-.ToDosComments .modal-body .message_wrap ul li .img_name .date span {
+.ToDosComments .modal-body .message_wrap > ul li .img_name .date span {
   font-size: 12px;
   color: #A7A8AA;
 }
 
-.ToDosComments .modal-body .message_wrap ul li .img_name .date .toolsDropDown {
+.ToDosComments .modal-body .message_wrap > ul li .img_name .date .toolsDropDown {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2448,7 +2883,7 @@ strong.active:before {
   margin-right: 16px;
 }
 
-.ToDosComments .modal-body .message_wrap ul li .img_name .date .toolsDropDown span {
+.ToDosComments .modal-body .message_wrap > ul li .img_name .date .toolsDropDown span {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 5px;
           flex: 0 0 5px;
@@ -2459,7 +2894,7 @@ strong.active:before {
   display: block;
 }
 
-.ToDosComments .modal-body .message_wrap ul li .text {
+.ToDosComments .modal-body .message_wrap > ul li .text {
   padding-left: 48px;
   margin-top: 4px;
   font-size: 14px;
@@ -2467,8 +2902,8 @@ strong.active:before {
   color: #404144;
 }
 
-.ToDosComments .modal-body .message_wrap ul li .text .screenshots {
-  margin-top: 4px;
+.ToDosComments .modal-body .message_wrap > ul li .text .screenshots {
+  margin-top: 8px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2477,26 +2912,27 @@ strong.active:before {
           justify-content: flex-end;
 }
 
-.ToDosComments .modal-body .message_wrap ul li .text .screenshots li {
+.ToDosComments .modal-body .message_wrap > ul li .text .screenshots li {
   width: 200px;
   position: relative;
   margin-right: 12px;
   margin-bottom: 12px;
 }
 
-.ToDosComments .modal-body .message_wrap ul li .text .screenshots li:hover .download_btn {
+.ToDosComments .modal-body .message_wrap > ul li .text .screenshots li:hover .download_btn {
   display: block;
 }
 
-.ToDosComments .modal-body .message_wrap ul li .text .screenshots li img {
+.ToDosComments .modal-body .message_wrap > ul li .text .screenshots li img {
   width: 100%;
 }
 
-.ToDosComments .modal-body .message_wrap ul li .text .screenshots li .download_btn {
+.ToDosComments .modal-body .message_wrap > ul li .text .screenshots li .download_btn {
   width: 32px;
   position: absolute;
   right: 12px;
   top: 12px;
+  cursor: pointer;
   display: none;
 }
 
