@@ -1390,8 +1390,7 @@ strong {
         margin-top: 12px;
         padding: 0 16px;
         .row {
-            padding: 6px 0;
-
+            padding: 5px 0;
             .user_info{
                 margin: 0;
             }
@@ -1406,7 +1405,7 @@ strong {
         .block {
             flex: 0 0 100%;
             border-bottom: 1px solid #EBECED;
-            padding: 10px 0;
+            padding: 5px 0;
 
             &:last-child {
                 border: 0;
@@ -1563,7 +1562,7 @@ strong {
             }
 
             .notes-wrap{
-                max-height: 224px;
+                max-height: 144px;
                 margin-top: 16px;
                 overflow: auto;
                 width: -webkit-calc( 100% + 10px );

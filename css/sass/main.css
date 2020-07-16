@@ -1370,7 +1370,7 @@ strong.active:before {
 }
 
 .admin-hire .hire-data .row {
-  padding: 6px 0;
+  padding: 5px 0;
 }
 
 .admin-hire .hire-data .row .user_info {
@@ -1390,7 +1390,7 @@ strong.active:before {
       -ms-flex: 0 0 100%;
           flex: 0 0 100%;
   border-bottom: 1px solid #EBECED;
-  padding: 10px 0;
+  padding: 5px 0;
 }
 
 .admin-hire .hire-data .block:last-child {
@@ -1575,7 +1575,7 @@ strong.active:before {
 }
 
 .admin-hire .hire-data .right-wrap .not_info .notes-wrap {
-  max-height: 224px;
+  max-height: 144px;
   margin-top: 16px;
   overflow: auto;
   width: calc( 100% + 10px);
